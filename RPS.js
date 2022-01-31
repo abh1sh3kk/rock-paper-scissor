@@ -18,7 +18,7 @@ function playRound(playerSelection, computerSelection) {
     ? (cPaper = 1)
     : computerSelection === "scissor"
     ? (cScissor = 1)
-    : 1;
+    : 0;
 
   playerSelection === "rock"
     ? (pRock = 1)
@@ -26,25 +26,29 @@ function playRound(playerSelection, computerSelection) {
     ? (pPaper = 1)
     : playerSelection === "scissor"
     ? (pScissor = 1)
-    : 1;
+    : 0;
 
   if (cRock) {
     if (pRock) resultFlag = -1;
     else if (pPaper) resultFlag = 1;
     else if (pScissor) resultFlag = 0;
-  } else if (cPaper) {
-    if (pRock) resultFlag = 0;
-    else if (pPaper) resultFlag = -1;
-    else if (pScissor) resultFlag = 1;
+    else resultFlag = null;
+} else if (cPaper) {
+	if (pRock) resultFlag = 0;
+	else if (pPaper) resultFlag = -1;
+	else if (pScissor) resultFlag = 1;
+	else resultFlag = null;
   } else {
     if (pRock) resultFlag = 1;
     else if (pPaper) resultFlag = 0;
     else if (pScissor) resultFlag = -1;
+    else resultFlag = null;
   }
 
   if (resultFlag === -1) return "Draw";
   else if (resultFlag == 1) return "You won!!";
-  else return "You lost!!";
+  else if(resultFlag == 0) return "You lost!!";
+  else return "Invalid Choice";
 }
 
 let playerSelectionRaw = prompt("Choose one among rock, paper and scissor.");
