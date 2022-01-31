@@ -1,1 +1,1 @@
- ### Just a basic Rock-Paper-Scissor game to improve in js😉
+ ### Just a basic Rock-Paper-Scissor game to get better in js😉
