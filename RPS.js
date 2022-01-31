@@ -21,16 +21,44 @@ function playRound(playerSelection, computerSelection) {
 		return "You won!! " + playerSelection + " beats " + computerSelection + ". ";
 	}
 
-	else
+	else if (playerSelection == "rock" && computerSelection == "rock" || 
+	playerSelection == "paper" && computerSelection == "paper" || 
+	playerSelection == "scissor" && computerSelection == "scissor")
 	{
 		return "Draw!!! You both chose " + playerSelection + ". "; 
+	}
+	else {
+		return "Invalid Choice."
 	}
 
   
 }
 
-let playerSelectionRaw = prompt("Choose one among rock, paper and scissor.");
-let computerSelection = computerPlay();
-let playerSelection = playerSelectionRaw.toLowerCase();
+function game()
+{	
+	let playerSelectionRaw = prompt("Choose one among rock, paper and scissor.");
+	let playerSelection = playerSelectionRaw.toLowerCase();
 
-console.log(playRound(playerSelection, computerSelection));
+	let computerSelection = computerPlay();
+	let result = playRound(playerSelection, computerSelection);
+	console.log(result);
+
+	if (result[4] == 'l') return 0;
+	else if (result[4] == 'w') return 1;
+	else if (result[0] == 'I') return null;
+	else return -1;
+}
+let userScore = 0, computerScore = 0;
+
+let result;
+for (let i = 1; i <= 3; i++) {
+	result = game();
+	if (result == 1) userScore++;
+	else if (result == 0) computerScore++;
+}
+if (userScore > computerScore) 
+	console.log("You won!!! Congratulations.");
+else if (computerScore > userScore) 
+	console.log("You lost!! Better luck next time.");
+else 
+	console.log("Draw.");
