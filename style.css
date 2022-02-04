@@ -1,37 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Roboto+Condensed:ital@1&display=swap');
-* {
-	margin: 0px;
-	padding: 0px;
-	list-style-type: none;
-	text-decoration: none;
-	/* box-sizing: border-box; */
-}
 body{
 	display: flex;
 	justify-content: center;
-	align-items: center;
 
-	/* background-image: url('images/background.jpg'); */
+	background-image: url('images/background3.jpg');
 
-	background-color: #0cbaba;
-	background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-
-
+	font-family: 'Bubblegum Sans', cursive;
 	color: white;
-
-	
+	text-shadow: 2px 2px 9px #000000;	
+	text-align: center;
 }
 .card {
 	display: flex;
-	/* background-color: #0cbaba; */
-	/* background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%); */
-	/* background-color: darkgrey; */
 	flex-direction: column;
 	justify-content: center;
-	padding: 10px;
+
+	background-color: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(1.5px);	
+	
+	padding: 15px 69px;
+	border-radius: 20px;
+	margin-top: 10vh;
+	box-shadow: 3px 11px 15px black;
 }
 .title {
 	font-family: 'Knewave';
@@ -41,7 +32,6 @@ body{
 .subText {
 	text-align: center;
 	font-size: 40px;
-	font-family: 'Bubblegum Sans', cursive;
 }
 .choice {
 	display: flex;
@@ -51,6 +41,10 @@ body{
 	gap: 30px;
 
 }
+.rock:hover, .paper:hover, .scissor:hover {
+	transform: scale(1.1);
+	
+}
 img {
 	height: 100px;
 	width: auto;
@@ -58,9 +52,6 @@ img {
 .score {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	font-family: 'Bubblegum Sans', cursive;
-	font-size: 20px;
 }
 
 .tHead, .tData {
@@ -75,10 +66,8 @@ img {
 	margin-top: 40px;
 }
 .scoreMessage{
-	text-align: center;
-	font-family: 'Bubblegum Sans', cursive;
 	font-size: 30px;
-	margin-top: 30px;
+	margin: 25px;
 }
 
 
