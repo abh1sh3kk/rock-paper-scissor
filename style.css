@@ -48,6 +48,7 @@ body{
 	margin-top: 20px;
 	justify-content: space-between;
 	padding: 9px 67px;
+	gap: 30px;
 
 }
 img {
@@ -61,11 +62,6 @@ img {
 	font-family: 'Bubblegum Sans', cursive;
 	font-size: 20px;
 }
-/* table{	
-	border: 2px solid red;
-	text-align: center;
-
-} */
 
 .tHead, .tData {
 	display: flex;
@@ -77,6 +73,12 @@ img {
 }
 .tHead{
 	margin-top: 40px;
+}
+.scoreMessage{
+	text-align: center;
+	font-family: 'Bubblegum Sans', cursive;
+	font-size: 30px;
+	margin-top: 30px;
 }
 
 
