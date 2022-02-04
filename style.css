@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	text-decoration: none;
+	/* box-sizing: border-box; */
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: darkgrey;
+	/* background-image: url('images/background.jpg'); */
+	color: white;
+}
+.card {
+	display: flex;
+	background-color: grey;
+	flex-direction: column;
+	justify-content: center;
+}
+.title {
+	font-family: 'Knewave';
+	text-align: center;
+	font-size: 69px;
+}
+.subText {
+	text-align: center;
+	font-size: 40px;
+}
+.choice {
+	display: flex;
+}
+img {
+	height: 20vh;
+	width: auto;
+}
