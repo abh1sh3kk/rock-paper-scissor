@@ -45,6 +45,10 @@ body{
 	transform: scale(1.1);
 	
 }
+.rock:active, .paper:active, .scissor:active {
+	transform: scale(1);
+	
+}
 img {
 	height: 100px;
 	width: auto;
