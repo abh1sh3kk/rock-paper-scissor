@@ -4,7 +4,11 @@ body{
 	display: flex;
 	justify-content: center;
 
-	background-image: url('images/background3.jpg');
+	/* background-image: url('images/background.jpg'); */
+	/* background-image: url('images/background3.jpg'); */
+	/* background-image: url('images/background4.jpg'); */
+	background-image: url('images/background5.jpg');
+	/* background-image: url('images/background6.jpg'); */
 
 	font-family: 'Bubblegum Sans', cursive;
 	color: white;
