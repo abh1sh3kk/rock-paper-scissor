@@ -8,7 +8,6 @@ document.querySelector(".scoreMessage").textContent =
     if (rps === 2) return "paper";
     if (rps === 3) return "scissor";
   }
-
   function playRound(playerSelection, computerSelection) {
     if (
       (playerSelection == "rock" && computerSelection == "paper") ||
