@@ -16,28 +16,20 @@ document.querySelector(".scoreMessage").textContent =
     ) {
       return 0;
 
-      // return "You lost!! " + computerSelection + " beats " + playerSelection + ". ";
-      // console.log("You lost!! " + computerSelection + " beats " + playerSelection + ". ");
     } else if (
       (playerSelection == "rock" && computerSelection == "scissor") ||
       (playerSelection == "paper" && computerSelection == "rock") ||
       (playerSelection == "scissor" && computerSelection == "paper")
     ) {
       return 1;
-      // return "You won!! " + playerSelection + " beats " + computerSelection + ". ";
-      // console.log("You won!! " + playerSelection + " beats " + computerSelection + ". ");
     } else if (
       (playerSelection == "rock" && computerSelection == "rock") ||
       (playerSelection == "paper" && computerSelection == "paper") ||
       (playerSelection == "scissor" && computerSelection == "scissor")
       ) {
 	      return -1;
-	      return "Draw!!! You both chose " + playerSelection + ". ";
-	      // console.log("Draw!!! You both chose " + playerSelection + ". ");
 	} else {
 		return null;
-		// return "Invalid Choice."
-		// console.log("Invalid Choice.");
 	}
 }
 
@@ -99,12 +91,4 @@ rock.addEventListener("click", () => {
         "It's a tie. Computer chose the same. ";
     }
   }
-//   if(computerScore === 5) {
-// 	alert("You lost!!");
-// }
-// else if (userScore === 5) {
-// 	alert("You won!!");
-// }
-// else {
-	
-// }
+
