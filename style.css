@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Roboto+Condensed:ital@1&display=swap');
 * {
 	margin: 0px;
 	padding: 0px;
@@ -11,15 +11,27 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: darkgrey;
+
 	/* background-image: url('images/background.jpg'); */
+
+	background-color: #0cbaba;
+	background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+
 	color: white;
+
+	
 }
 .card {
 	display: flex;
-	background-color: grey;
+	/* background-color: #0cbaba; */
+	/* background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%); */
+	/* background-color: darkgrey; */
 	flex-direction: column;
 	justify-content: center;
+	padding: 10px;
 }
 .title {
 	font-family: 'Knewave';
@@ -29,11 +41,49 @@ body{
 .subText {
 	text-align: center;
 	font-size: 40px;
+	font-family: 'Bubblegum Sans', cursive;
 }
 .choice {
 	display: flex;
+	margin-top: 20px;
+	justify-content: space-between;
+	padding: 9px 67px;
+
 }
 img {
-	height: 20vh;
+	height: 100px;
 	width: auto;
 }
+.score {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: 'Bubblegum Sans', cursive;
+	font-size: 20px;
+}
+/* table{	
+	border: 2px solid red;
+	text-align: center;
+
+} */
+
+.tHead, .tData {
+	display: flex;
+	font-size: 40px;
+	justify-content: space-around;
+}
+.tData {
+	margin-top: 9px;
+}
+.tHead{
+	margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
